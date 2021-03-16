@@ -1,0 +1,15 @@
+:root{
+
+    /*Coleres*/
+    --primaryColor : white;
+    --secondColor: #fbc918;
+    --thirdColor : #d97f03;
+    --fourthColor : #aa3030;
+
+
+    --section_history_bg: white;
+
+    --footerColor: black;
+    --footerTextColor: white;
+
+}

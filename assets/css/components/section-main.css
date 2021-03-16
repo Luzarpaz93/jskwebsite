@@ -1,0 +1,110 @@
+.section-main{
+    height: 100vh;
+    background-image: url("../../img/main_background.png");
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    background-attachment: scroll;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+.section-main .main-body{
+    width: 925px;
+    height: 20rem;
+    display: flex;
+    position: relative;
+}
+.section-main .main-body:after{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+
+.section-main .main-body .main-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(90% - 56px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 5rem;
+    line-height: 2.5rem;
+    z-index: 10;
+    box-sizing: border-box;
+}
+.section-main .main-body:after {
+    content: "";
+    width: 270px;
+    height: 120%;
+    background-color: orange;
+    position: absolute;
+    z-index: 1;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-main .main-body .main-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 560px;
+    z-index: 10;
+}
+
+.section-main .main-body h1{
+    font-size: 2.5rem;
+}
+.section-main .main-body .container-button {
+    margin-top: 1.5rem;
+}
+
+.section-main .main-body .main-video iframe{
+    height: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .section-main .main-body .main-video{
+        display: none;
+    }
+    .section-main .main-body{
+        width: 100%;
+    }
+    .section-main .main-body .main-wraper{
+        width: 100%;
+    }
+    .section-main .main-body:after{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-main{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: inherit;
+    }
+    .section-main .main-body{
+        display: inherit;
+        height: initial;
+    }
+    .section-main .main-body .main-wraper{
+        padding: 4rem 2rem;
+    }
+    .section-main .main-body .main-video{
+        z-index: 10;
+        margin: auto;
+        display: inherit;
+        width: 100%;
+    }
+    .section-main .main-body .main-video video{
+        width: 100%;
+    }
+}

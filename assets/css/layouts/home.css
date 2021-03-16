@@ -1,0 +1,21 @@
+@import "../base/root.css";
+@import "../base/typography.css";
+@import "../base/config.css";
+
+
+@import "../components/button.css";
+@import "../components/loading.css";
+@import "../components/social-link.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+
+
+@import "../components/section.css";
+@import "../components/section-main.css";
+@import "../components/section-history.css";
+@import "../components/section_servicies.css";
+@import "../components/section_promotion.css";
+@import "../components/section_motto.css";
+@import "../components/section_testimony.css";
+@import "../components/section_contact.css";
+

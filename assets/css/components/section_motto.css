@@ -1,0 +1,50 @@
+.section_motto {
+    background-color: #5e1c00;
+    color: #5e1c00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.section_motto .section-body {
+    background-color: white;
+    width: 80%;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.section_motto .section-body .motto_content{
+    display: flex;
+}
+.section_motto .section-body .motto_content .motto_icon{
+    font-size: 2.5rem;
+}
+.section_motto .section-body .motto_content .motto_text{
+    font-size: 2rem;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: justify;
+    padding-right: 10rem;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+
+.section_motto .section-body .motto_author {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+@media screen and (max-width: 900px){
+    .section_motto .section-body .motto_content{
+        display: block;
+    }
+    .section_motto .section-body .motto_content .motto_icon{
+        font-size: 20px;
+    }
+    .section_motto .section-body .motto_content .motto_text{
+        padding-right: 0;
+        font-size: 25px;
+    }
+}

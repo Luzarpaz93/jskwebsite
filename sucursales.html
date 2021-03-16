@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sucursales.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>EMPEÑOS JSK</title>
+  </head>
+  <style>
+
+.nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #fff;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #000000;
+    background: #fff;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*/
+body {
+    min-height: 100vh;
+    background: linear-gradient(to left, #c3b601, #aa5b00);
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+   }
+  </style>
+  <body>
+    <!-- Demo header-->
+<section class="py-5 header">
+    <div class="container py-4">
+        <header class="text-center mb-5 pb-5 text-white">
+            <h1 class="display-4"style="color:white; font-size:60px; font-family:'Roboto',sans-serif;" >Conoce nuestras sucursales</h1>
+            <p class="font-italic mb-1" style="color:white; font-size:20px; font-family:'Roboto',sans-serif;">Conoce las 28 sucursales, y encuentra la más adecuada para ti</p>
+            <img src="/assets/img/logo.png">
+            <a href="index.php"><p class="font-italic mb-1" style="color:white; font-size:15px; font-family:'Roboto',sans-serif;"> Regresar al inicio</p></a>
+
+        </header>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <i class="fa fa-user-circle-o mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Sucursales Norte y Centro</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <i class="fa fa-calendar-minus-o mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Sucursales Sur</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <i class="fa fa-star mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Sucursales Oriente</span></a>
+
+                    <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <i class="fa fa-check mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Sucursales Poniente</span></a>
+                    </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <!-- Tabs content -->
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <h4 class="font-italic mb-4">Sucursales Norte</h4>
+                        <li class="mapa_id_centro"  data-toggle="collapse" href="#direccionCentro" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold" value ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc037411f1f1bdc!2sEMPE%C3%91OS%20J.S.K!5e0!3m2!1ses!2smx!4v1606702056223!5m2!1ses!2smx">Sucursal Centro</li>
+                        <p class="collapse" id= "direccionCentro"> Interios Mercado San Benito Local 5 y 6 bloque A-43, Calle 69 sn, Centro, 97000 Mérida, Yuc.</p>
+                        <li class="mapa_id_centro" data-toggle="collapse" href="#direccionNorte"  style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold;" value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100269.02047165135!2d-89.67272338530499!3d20.941678971093367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41b955abc33b9744!2sEMPE%C3%91OS%20J.%20S.%20K.!5e0!3m2!1ses!2smx!4v1606702525475!5m2!1ses!2smx">Sucursal Norte</li>
+                        <p class="collapse" id= "direccionNorte "> Lt.1 45 y 47, Carr. Mérida - Progreso 300, Cordemex, 97180 Mérida, Yuc.</p>  
+                        </ul>
+                        
+                        <div style="margin-top: 50px" >
+                            <iframe class="col-lg-12 col-md-12 col-sm-12" style="box-shadow:-1px 10px 18px 1px rgba(50, 50, 46, 0.75)" id="mapa_centro" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc037411f1f1bdc!2sEMPE%C3%91OS%20J.S.K!5e0!3m2!1ses!2smx!4v1606702056223!5m2!1ses!2smx" width="700" height="750" frameborder="5" style="border:2px; color: yellow" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h4 class="font-italic mb-4">Zona Sur</h4>
+                        <ul style= "overflow:auto">
+                        <li class="mapa_id" data-toggle="collapse"  href="#direccionSantaRosa" style="background-color: white; border-radius: 3px; padding-left: 20px;padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold;" value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ae895a914800c95!2sEMPE%C3%91OS%20J.S.K.!5e0!3m2!1ses!2smx!4v1606702020750!5m2!1ses!2smx">Sucursal Santa Rosa</li>
+                        <p class="collapse" id= "direccionSantaRosa"> Calle 96, Local 9, Santa Rosa, 97279 Mérida, Yuc.</p>
+
+                        <li class="mapa_id" data-toggle="collapse"  href="#direccionSantaNicolas" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold; " value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5299a9ed848b0254!2sEnpe%C3%B1os%20JSK!5e0!3m2!1ses!2smx!4v1606701996533!5m2!1ses!2smx"> Sucursal San Nicolás Sur </li>
+                        <p class="collapse" id= "direccionSantaNicolas"> San Nicolás del Sur, 97289 Mérida, Yuc.
+                        </p>
+
+                        <li class="mapa_id" data-toggle="collapse"  href="#direccionCircuito" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold;" value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5452417a72fa05a!2sEMPE%C3%91OS%20J.S.K.!5e0!3m2!1ses!2smx!4v1606701972522!5m2!1ses!2smx"> Sucursal Circuito </li>
+                        <p class="collapse" id= "direccionCircuito"> por 64F y 64J, Cto Colonias, Castilla Cámara, 97278 Mérida, Yuc.</p>  
+                        </ul>
+                            <div style="margin-top: 50px" >
+                                <iframe class="col-lg-12 col-md-12 col-sm-12" style="height:200px; box-shadow:-1px 10px 18px 1px rgba(50, 50, 46, 0.75)" id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc037411f1f1bdc!2sEMPE%C3%91OS%20J.S.K!5e0!3m2!1ses!2smx!4v1606702056223!5m2!1ses!2smx" width="700" height="750" frameborder="5" style="border:2px; color: yellow" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <h4 class="font-italic mb-4">Sucursales Oriente</h4>
+                        <ul style= "overflow:auto">
+                            <li class="mapa_id_oriente" data-toggle="collapse"  href="#direccionBojorquez" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold; " value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3e249df1d3d5c25!2sJSK!5e0!3m2!1ses!2smx!4v1606701941713!5m2!1ses!2smxhttps://goo.gl/maps/nJhohpwWWPX3zGVv8"> Sucursal Bojorquez </li>
+                            <p class="collapse" id= "direccionBojorquez"> Calle 106 486, Bojórquez, 97230 Mérida, Yuc., México</p>  
+                            <li class="mapa_id_oriente" data-toggle="collapse" href="#direccionFrancisco" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold; " value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10608972d277b624!2sEMPE%C3%91OS%20J.S.K.!5e0!3m2!1ses!2smx!4v1606701896984!5m2!1ses!2smx"> Sucursal Francisco I Madero </li>
+                            <p class="collapse" id= "direccionFrancisco"> x 31 y 33, Cto Colonias, Francisco I. Madero, 97240 Mérida, Yuc.</p>  
+                            <li class="mapa_id_oriente" data-toggle="collapse" href="#direccionXoclan" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold;" value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ab4334295e58528!2sEMPE%C3%91OS%20J.S.K.!5e0!3m2!1ses!2smx!4v1606701858725!5m2!1ses!2smxhttps://goo.gl/maps/263Ag3jx8iWUW7kU6"> Sucursal Xoclán </li>
+                            <p class="collapse" id= "direccionXoclan"> Calle 61 X 120, Calle 120ᴬ 1006, Xoclán Canto, 97245 Mérida, Yuc., México</p>  
+                            <li class="mapa_id_oriente" data-toggle="collapse" href="#direccionPoligono" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold;" value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29210.676863649183!2d-89.65687988667747!3d20.974206604818715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cba167f6ba94164!2sEMPE%C3%91OS%20J.S.K.%20SUCURSAL%20IGLU!5e0!3m2!1ses-419!2smx!4v1612431280439!5m2!1ses-419!2smx"> Sucursal Polígono </li>
+                            <p class="collapse" id= "direccionPoligono">Calle 5 72, Mulsay Polígono, 97246 Mérida, Yuc.</p>  
+                            <li class="mapa_id_oriente" data-toggle="collapse" href="#direccionJuan" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold; "  value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29210.676863649183!2d-89.65687988667747!3d20.974206604818715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x876d818c4ca3a522!2sMensual%20Empenos%20J.S.K!5e0!3m2!1ses-419!2smx!4v1612431153722!5m2!1ses-419!2smx"> Sucursal Juan Pablo II </li>
+                            <p class="collapse" id= "direccionJuan"> Juan Pablo II, 97246 Mérida, Yuc.</p>  
+                            <li class="mapa_id_oriente" data-toggle="collapse" href="#direccionNora" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold" value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56116.886693626315!2d-89.64363899469187!3d20.928091051294487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe85af3d2ab613fa!2sEMPE%C3%91OS%20J.%20S.%20K.!5e0!3m2!1ses!2smx!4v1606700639248!5m2!1ses!2smx"> Sucursal Nora Quintana </li>
+                            <p class="collapse" id= "direccionNora"> esquina 64 a, Calle 140 594, Nora Quintana, 97238 Mérida, Yuc.</p>    
+                          </ul>  
+                          <div style="margin-top: 50px" >
+                                <iframe class="col-lg-12 col-md-12 col-sm-12" style="box-shadow:-1px 10px 18px 1px rgba(50, 50, 46, 0.75)" id="mapa_oriente" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc037411f1f1bdc!2sEMPE%C3%91OS%20J.S.K!5e0!3m2!1ses!2smx!4v1606702056223!5m2!1ses!2smx" width="700" height="750" frameborder="5" style="border:2px; color: yellow" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                    </div>
+                    
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h4 class="font-italic mb-4">Zona Poniente</h4>
+                        <ul style= "overflow:auto">
+                            <li class="mapa_id_poniente" data-toggle="collapse" href="#direccionManuel" style="background-color: white; border-radius: 3px; padding-left: 20px; padding-top:5px; padding-bottom:5px; font-size:20px; color: black; font-weight: bold; " value = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b38bbc0b688e6f1!2sEMPE%C3%91OS%20J%20S%20K!5e0!3m2!1ses!2smx!4v1606702087789!5m2!1ses!2smx">Sucursal Manuel Ávila Camacho</li>
+                            <p class="collapse" id= "direccionManuel"> Calle 12 por Calle 31 y 33, Manuel Ávila Camacho, 97159 Mérida, Yuc.</p>      
+                          </ul>
+                        <div style="margin-top: 50px" >
+                            <iframe class="col-lg-12 col-md-12 col-sm-12" style="box-shadow:-1px 10px 18px 1px rgba(50, 50, 46, 0.75)" id="mapa_poniente" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59623.10493619206!2d-89.6461425!3d20.9346751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fc037411f1f1bdc!2sEMPE%C3%91OS%20J.S.K!5e0!3m2!1ses!2smx!4v1606702056223!5m2!1ses!2smx" width="700" height="750" frameborder="5" style="border:2px; color: yellow" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <!-- jQuery and JS bundle w/ Popper.js -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(".mapa_id").click(function(){
+                //alert($(this).attr('value'))
+                 $("#mapa").attr("src", $(this).attr('value')) 
+                 $(".mapa_id").css("background-color", "white")
+                 $(this).css('background-color',"#b2b2b2",'color','white')
+              })
+        </script>
+        <script>
+            $(".mapa_id_oriente").click(function(){
+                //alert($(this).attr('value'))
+                 $("#mapa_oriente").attr("src", $(this).attr('value')) 
+                 $(".mapa_id_oriente").css("background-color", "white")
+                 $(this).css('background-color',"#b2b2b2",'color','white')
+              })
+        </script>
+          <script>
+            $(".mapa_id_centro").click(function(){
+                //alert($(this).attr('value'))
+                 $("#mapa_centro").attr("src", $(this).attr('value')) 
+                 $(".mapa_id_centro").css("background-color", "white")
+                 $(this).css('background-color',"#b2b2b2",'color','white')
+              })
+        </script>
+        <script>
+            $(".mapa_id_poniente").click(function(){
+                //alert($(this).attr('value'))
+                 $("#mapa_poniente").attr("src", $(this).attr('value')) 
+                 $(".mapa_id_poniente").css("background-color", "white")
+                 $(this).css('background-color',"#b2b2b2",'color','white')
+              })
+        </script>
+</body>
+</html>

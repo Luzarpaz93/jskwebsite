@@ -1,0 +1,38 @@
+.section-promotion{
+    background: white;
+    color: black;
+}
+.section-promotion .section-body{
+    position: relative;
+    padding: 0 5rem;
+}
+
+.section-promotion .section-body #slider-promotion .slider-item {
+    width: 100%;
+    position: relative;
+}
+.section-promotion .section-body #slider-promotion .splide__slide img{
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.section-promotion .section-body #slider-promotion  .splide__optional-button-container {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.section-promotion .section-body #slider-promotion  .splide__slide {
+    min-height: 200px;
+    text-align: center;
+}
+.section-promotion .section-body #slider-promotion  .splide__arrow{
+    background-color: var(--fourthColor);
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+.section-promotion .section-body #slider-promotion .splide__track{
+    margin-top: 1rem;
+}

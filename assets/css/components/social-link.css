@@ -1,0 +1,16 @@
+  
+.social-link{
+    display: flex;
+    color: var(--thirdColor);
+    font-size: 21px;
+    align-items: center;
+    height: 100%;
+}
+.social-link .social_icon{
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.social-link .social_icon:hover{
+    color: white;
+}
